@@ -1,16 +1,41 @@
 <html>
-    <head>
+
+<head>
     <script src="script.js"></script>
     <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-        <h1>Simple Interest Calculator</h1>
+</head>
 
-        Amount <input type="number"  id="principal">  <br/>
-        Rate <input type="number"  id="rate">  <br/>
-        No. of Years <input type="number"  id="years">  <br/>
-        Interest : <span id="result"></span><br>
+<body>
+    <main id="main">
+        <section id="sec1">
+            <h1>Simple Interest Calculator</h1>
+        </section>
+        <section id="sec2" class="forflex">
+            <article class="art1">
+                <div>
+                    <label for="principal">Amount: </label>
+                    <input type="number" id="principal"> <br />
+                </div>
+                <div>
+                    <label for="rate">Interest Rate: </label>
+                    <input type="range" min="0" max="20" value="0" step=".1" class="slider" id="myRange"
+                        onchange="onChange(this.value)"><span id="selrate"> 0%</span><br />
+                </div>
+                <div>
+                    <label for="years">No. of Years: </label>
+                    <input type="number" id="years"> <br />
+                </div>
+                <div>
+                    <button onclick="compute()">Compute Interest</button>
+                </div>
+            </article>
+            <article class="art2" id="showintr"></article>
+        </section>
+        <section id="sec3">
+            <h4>&copy; Everyone can get rich.</h4>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
 
-        <button onclick="compute()">Compute</button>
-    </body>
 </html>

@@ -1,4 +1,64 @@
-body {background-color:tan;}
-h1{color:green;}
+body {
+    background-color:rgb(48, 44, 39);
+    width: 100%;
+    height: fit-content;
+}
+#main{
+    position: absolute;
+    left: 20%;
+    right: 20%;
+    top: 8%;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0px 20px;
+    font-weight: 600;
+    border-radius: 10px;
+    background-color: white;
+}
+h1{
+    color:rgb(117, 107, 87);
+    font-size: 30px;
+    font-weight: 700;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+}
+#sec2{
+    flex-direction: column;
+    align-self: center;
+    height: 100%;
+    width: 100%;
+}
+.art1{
+    height: 50%;
+    width: 65%;
+    align-self:center;
+}
+#myRange{
+    width:45%;
+}
+.art2{
+    /* line-height: 3px; */
+    width: 65%;
+    margin: auto;
+}
+label{
+    display: inline-block;
+    width: 100px;
+}
+#years{
+    width: 50px;
+}
+#principal{
+    width: 55%;
+}
+div{
+    margin: 10px 0px 10px 0px;
+}
+p{
+    margin: 0px 0px;
+}
 
+/* ************other************ */
+.forflex{
+    display: flex;
+}
 
