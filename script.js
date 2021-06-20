@@ -7,6 +7,7 @@ function compute() {
     let years = Number(document.getElementById("years").value);
     if (p < 1) {
         alert("Enter a positive number");
+	p.value="";
     }
     else {
         let receiveAmount = ((myRate * p * years) / 100).toFixed(2);
